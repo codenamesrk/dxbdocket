@@ -1,0 +1,32 @@
+/* StyleSheet */
+.top-bar {
+	color: $white;
+	.menu.horizontal li, 
+	.menu.vertical li {
+		.input-group {
+			margin-bottom: rem-calc(10);
+			@include breakpoint(medium) {
+				margin-bottom: 0;
+				padding-right: 1rem;
+			}
+		}
+		&:last-of-type {
+			.input-group {
+				padding-right: 0;
+				margin-bottom: 0;
+			}			
+			input {
+				margin-right: 0;
+			}
+		}			
+	}
+
+}
+.top-bar-title {
+	width: 100%;
+	text-align: center;
+	@include breakpoint(large) {
+		padding: $topbar-large-title-spacing;
+		width: auto;
+	}
+}

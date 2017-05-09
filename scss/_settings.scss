@@ -106,7 +106,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: 600;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
@@ -229,7 +229,7 @@ $badge-font-size: 0.6rem;
 // 10. Breadcrumbs
 // ---------------
 
-$breadcrumbs-margin: 0 0 $global-margin 0;
+$breadcrumbs-margin: $global-margin 0;
 $breadcrumbs-item-font-size: rem-calc(11);
 $breadcrumbs-item-color: $primary-color;
 $breadcrumbs-item-color-current: $black;

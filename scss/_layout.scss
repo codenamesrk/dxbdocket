@@ -1,6 +1,7 @@
 // Layout
 body {
 	min-width: 320px;
+	overflow-x: hidden;
 }
 #site-container {
 	max-width: $global-width;
@@ -9,6 +10,27 @@ body {
 	// background: #d5d5f3;
 	display: block;
 }
+.navigation-adslot-2-wrap {
+	@include grid-row();
+	margin-bottom: $global-margin;
+}
+.main-container,
+.sidebar-container {
+	@include grid-column(12);
+}
+.main-container {
+	@include breakpoint(large) {
+		@include grid-column(8);
+		padding-left: 0 !important;
+	}
+}
+.sidebar-container {
+	@include breakpoint(large) {
+		@include grid-column(4);
+		padding-right: 0 !important;
+	}	
+}
+
 .post-navigation,
 .adslot-2-wrap {
 	@include grid-column(12,0);		

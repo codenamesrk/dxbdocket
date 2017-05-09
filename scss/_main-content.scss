@@ -64,3 +64,70 @@
 		font-size: 90%;
 	}
 }
+
+// Reviews
+.reviews {
+	@include grid-row();
+	dl dt {
+		font-weight: normal;
+		font-size: 90%;
+		padding-top: 1rem;
+		border-top: 1px solid #eaeaea;
+		&:first-of-type {
+			border-top: none;
+		}
+	}
+	dd {
+		font-size: 90%;
+		padding-bottom: 1rem;
+	}
+}
+.reviewer-details {
+	@include grid-column(8,0);
+}
+.rating {
+	@include grid-column(3);
+	width: 80px !important;
+	float: right;
+	span {
+		color: #FFC107;
+	}
+}
+
+// Response
+.response,
+.comment-block,
+.user-info-block {
+	@include grid-row();	
+}
+.comment-block {
+	textarea {
+		margin-bottom: $global-padding;
+		padding: 15px 20px;
+		font-size: 90%;
+		line-height: 1.5;
+	}
+}
+.user-info-block {
+	.block-6 {
+		@include grid-column(12,0);
+		@include breakpoint(intermediate) {
+			@include grid-column(6,0);
+			padding-left: $global-padding/2;
+			padding-right: 0;
+			&:first-of-type {
+				padding-left: 0;
+				padding-right: $global-padding/2;
+			}			
+		}
+	}
+	label {
+		color: #0a0a0a;
+	    width: 100%;
+	    height: 2.4375rem;
+	    line-height: inherit;
+	    margin: 0 0 1rem;
+	    padding: .5rem;
+	    border: 1px solid #cacaca;
+	}	
+}

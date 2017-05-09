@@ -1,8 +1,13 @@
 // Ad Slots
 .spons-link {
 	font-size: 50%;
+	display: block;
 }
 #adslot-1 {
 	max-height: 90px;
 	text-align: center;	
+}
+#adslot-2 {
+	width: 336px;
+	max-height: 292px;	
 }

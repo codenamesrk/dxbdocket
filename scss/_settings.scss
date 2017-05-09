@@ -82,13 +82,14 @@ $topbar-black: #002a2b;
 
 $breakpoints: (
   small: 0,
+  intermediate: 480px,
   medium: 640px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small intermediate medium large);
 
 // 3. The Grid
 // -----------

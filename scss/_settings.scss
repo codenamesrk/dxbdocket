@@ -232,13 +232,13 @@ $badge-font-size: 0.6rem;
 // ---------------
 
 $breadcrumbs-margin: $global-margin 0;
-$breadcrumbs-item-font-size: rem-calc(11);
-$breadcrumbs-item-color: $primary-color;
+$breadcrumbs-item-font-size: $global-font-size;
+$breadcrumbs-item-color: $black;
 $breadcrumbs-item-color-current: $black;
 $breadcrumbs-item-color-disabled: $medium-gray;
-$breadcrumbs-item-margin: 0.75rem;
-$breadcrumbs-item-uppercase: true;
-$breadcrumbs-item-slash: true;
+$breadcrumbs-item-margin: 0;
+$breadcrumbs-item-uppercase: false;
+$breadcrumbs-item-slash: false;
 
 // 11. Button
 // ----------

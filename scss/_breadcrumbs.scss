@@ -1,1 +1,9 @@
 // Breadcrumbs
+.breadcrumbs li {
+	&:not(:last-child)::after {
+		@include fa-icon();
+		content: $fa-var-angle-right;
+	    margin: 0 .75rem;
+	    color: #cacaca;
+	}
+}

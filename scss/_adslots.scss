@@ -11,14 +11,14 @@
 *
  */
 .spons-link {
-	font-size: 50%;
+	font-size: 70%;
 	display: block;
 }
 #adslot-1,
 #adslot-2,
 #adslot-3,
 #adslot-4 {
-	margin-bottom: $global-margin;
+	margin-bottom: $global-margin+0.25;
 }
 #adslot-1 {
 	max-height: 90px;

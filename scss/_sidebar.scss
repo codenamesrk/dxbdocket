@@ -1,8 +1,10 @@
 // Sidebar
-.map,
+.map {
+	margin-bottom: $global-margin/2;
+}
 .address,
 .phone {
-	margin-bottom: $global-margin;
+	margin-bottom: $global-margin+0.25;
 }
 // .map {
 // 	margin-top: $global-margin;

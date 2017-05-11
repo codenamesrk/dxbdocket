@@ -15,12 +15,16 @@ window.WebFontConfig = {
 
 $(document).foundation();
 
-$(".rating").rate();
-
-//or for example
-var options = {
-    max_value: 6,
+// Rate Options
+var rateOptions = {
+    max_value: 5,
+    step_size: 0.5,
+}
+var roOptions = {
+    max_value: 5,
+    readonly: true,
     step_size: 0.5,
 }
 
-$(".rating").rate(options);
+$(".rating-ro").rate(roOptions);
+$(".rating").rate(rateOptions);

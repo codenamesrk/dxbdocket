@@ -1,13 +1,35 @@
 // Ad Slots
+/*
+#adslot-1 - Leaderboard ad 728x90 < 1024px
+#adslot -1 Leaderboard ad 970x90 >= 1024px
+#adslot-2 - Square 300x250 < 640px
+#adslot-2 - Square 336x280 >= 640px
+#adslot-3 - Hidden on screens < 640px
+#adslot-3 - Large Skyscraper >= 640px
+#adslot-4 - Visible only on screens < 640px
+#adslot-4 - Hidden on screens >= 640px
+*
+ */
 .spons-link {
 	font-size: 50%;
 	display: block;
+}
+#adslot-1,
+#adslot-2,
+#adslot-3,
+#adslot-4 {
+	margin-bottom: $global-margin;
 }
 #adslot-1 {
 	max-height: 90px;
 	text-align: center;	
 }
-#adslot-2 {
-	width: 336px;
-	max-height: 292px;	
+#adslot-2 {		
+	@include breakpoint(large) {
+		width: 336px;
+		max-height: 292px;
+	}
+}
+#adslot-3 {
+	text-align: center;	
 }

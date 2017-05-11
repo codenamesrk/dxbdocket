@@ -7,7 +7,7 @@ body {
 	max-width: $global-width;
     margin-right: auto;
     margin-left: auto;	
-	// background: #d5d5f3;
+	background: #d5d5f3;
 	display: block;
 }
 .navigation-adslot-2-wrap {
@@ -19,31 +19,56 @@ body {
 	@include grid-column(12);
 }
 .main-container {
+	@include breakpoint(medium) {
+		@include grid-column(52.5%);
+		// padding-left: 0 !important;
+	}
+	@include breakpoint(intermedium) {
+		@include grid-column(7);
+	}	
 	@include breakpoint(large) {
 		@include grid-column(8);
 		padding-left: 0 !important;
 	}
 }
 .sidebar-container {
+	@include breakpoint(medium) {
+		@include grid-column(47.5%);
+		padding-left: 0 !important;
+	}
+	@include breakpoint(intermedium) {
+		@include grid-column(5);
+	}	
 	@include breakpoint(large) {
 		@include grid-column(4);
+		padding-left: .9375rem !important;
 		padding-right: 0 !important;
 	}	
 }
-
+.mobile-adslot-container {
+	@include hide-for(medium);
+}
+.sidebar-first-block {
+	@include show-for(medium);
+}
 .post-navigation,
 .adslot-2-wrap {
 	@include grid-column(12,0);		
 }
-.post-navigation {	
-	@include breakpoint(medium) {
-		@include grid-column(5,0);
+.post-navigation {		
+	@include breakpoint(large) {
+		@include grid-column(5,0);		
+		@include grid-col-pos(-7);
 		padding-top: 1rem;
+		.post-details h6 {
+			font-size: 94%;
+		}
 	}
 }
-.adslot-2-wrap {
-	@include breakpoint(medium) {
-		@include grid-column(7,0);		
+.adslot-2-wrap {	
+	@include breakpoint(large) {
+		@include grid-column(7,0);
+		@include grid-col-pos(5);
 	}
 	.adslot-2 {
 		margin: 0 auto;

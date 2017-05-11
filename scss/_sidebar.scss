@@ -4,6 +4,38 @@
 .phone {
 	margin-bottom: $global-margin;
 }
-.map {
-	margin-top: $global-margin;
-}
+// .map {
+// 	margin-top: $global-margin;
+// }
+
+// Post Listing
+ .post-list {
+ 	.post {
+ 		margin-bottom: 0.9375rem;
+ 	}
+ 	.post-thumbnail {
+ 		width: 51px;
+ 		height: 51px;
+ 		background: yellow; 		
+		float: left;
+    	position: relative;
+    	margin-right: 1rem;
+    	h4 {
+    		@include absolute-center;
+    	} 		
+ 	}
+ 	.post-details {
+ 		position: relative;
+ 		width: 100%;
+ 		padding-right: 38px;
+ 		line-height: 0; 		
+ 	}
+ 	.post-score {
+	 	position: absolute;
+	    top: 0;
+	    right: 0;
+	    .label {
+	    	padding: 9px 6px;
+	    }	
+ 	}
+ }

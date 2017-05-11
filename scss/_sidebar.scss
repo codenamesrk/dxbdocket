@@ -12,6 +12,7 @@
 
 // Post Listing
  .post-list {
+ 	margin-top: $global-margin+.25;
  	.post {
  		margin-bottom: 0.9375rem;
  	}
@@ -32,6 +33,12 @@
  		padding-right: 38px;
  		line-height: 0; 		
  	}
+ 	.post-title a {
+ 		color: $black;
+ 	}
+ 	.post-loc {
+ 		color: transparentize($dark-gray,0.2);
+ 	} 	
  	.post-score {
 	 	position: absolute;
 	    top: 0;

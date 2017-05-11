@@ -1,6 +1,9 @@
 /* StyleSheet */
 .top-bar {
 	color: $white;
+	.input-group-field {
+		background: #fff;
+	}
 	.menu.horizontal li, 
 	.menu.vertical li {
 		.input-group {
@@ -8,6 +11,13 @@
 			@include breakpoint(medium) {
 				margin-bottom: 0;
 				padding-right: 1rem;
+			}
+		}
+		&:first-of-type {
+			.input-group {
+				input {
+					border-radius: 0 .28571rem .28571rem 0;
+				}
 			}
 		}
 		&:last-of-type {

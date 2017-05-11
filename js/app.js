@@ -1,7 +1,7 @@
 // Web Font Loader
 window.WebFontConfig = {
 	google: {
-	  families: ['Open+Sans:300,400,600']
+	  families: ['Source+Sans+Pro:300,400,600']
 	}
 };
 (function() {

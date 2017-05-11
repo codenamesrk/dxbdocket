@@ -4,7 +4,7 @@
 	.menu.horizontal li, 
 	.menu.vertical li {
 		.input-group {
-			margin-bottom: rem-calc(10);
+			margin-bottom: rem-calc(10);			
 			@include breakpoint(medium) {
 				margin-bottom: 0;
 				padding-right: 1rem;
@@ -19,9 +19,23 @@
 				margin-right: 0;
 				font-family: inherit;
 			}
+		}
+		.input-group-label {
+			background: #d9e4de;
+			font-size: 1.1rem;
 		}			
 	}
-
+	.menu.horizontal li, 
+	.menu.vertical li {
+		.input-group,
+		.input-group-field,
+		.input-group-button a,
+		.input-group-button input,
+		.input-group-button button {
+			height: 40px;
+			text-transform: capitalize;
+		}
+	}
 }
 .top-bar-title {
 	width: 100%;

@@ -6,7 +6,8 @@
   "dependencies": {
     "foundation-sites": "~6.3.0",
     "motion-ui": "~1.2.2",
-    "rater": "*"
+    "rater": "*",
+    "components-font-awesome": "^4.7.0"
   },
   "ignore": [
     "**/.*",

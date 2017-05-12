@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DXB Docket</title>
 	<link rel="stylesheet" href="css/app.css">
+	<!-- <link rel="stylesheet" href="css/app.min.css"> -->
 </head>
 <body>
 	<!-- Topbar -->
@@ -123,6 +124,28 @@
 						<img src="assets/map.jpg" height="311" width="472" alt="">
 					</div>
 					<!-- /Map -->
+
+					<!-- Categories -->
+					<div class="categories">
+						<ul class="menu simple">
+							<li>
+								<h1><a href="">Restaurant</a></h1>
+							</li>
+							<li>
+								<h1><a href="">Bar</a></h1>
+							</li>
+							<li>
+								<h1><a href="">Cafe</a></h1>
+							</li>
+							<li>
+								<h1><a href="">Pub</a></h1>
+							</li>
+							<li>
+								<h1><a href="">Bistro</a></h1>
+							</li>						
+						</ul>
+					</div>
+					<!-- /Categories -->
 
 					<!-- Address Block -->
 					<div class="address">
@@ -318,16 +341,16 @@
 
 					<!-- Response -->
 					<h5>Write a review</h5>
-					<form action="" method="post" id="review-form" >
+					<form action="postrate.php" method="post" id="review-form" >
 						<div class="response">
 							<div class="user-info-block">
 								<div class="block-6">
-									<input type="text" name="author" id="author" value="" size="22" placeholder="Name *" tabindex="1" aria-required="true" required="" pattern="alpha">
+									<input type="text" name="author" id="author" value="" size="22" placeholder="Name *" tabindex="1" aria-required="true" required="">
 								</div>
 								<div class="block-6">
 									<label>
 										Rate it
-										<div class="rating" data-rate-value=3.5></div>
+										<div class="rating"></div>
 									</label>
 								</div>
 							</div>
@@ -343,6 +366,29 @@
 			</section>
 			<aside class="sidebar-container">
 				<div class="sidebar-first-block">
+
+					<!-- Categories -->
+					<div class="categories">
+						<ul class="menu simple">
+							<li>
+								<h1><a href="">Restaurant</a></h1>
+							</li>
+							<li>
+								<h1><a href="">Bar</a></h1>
+							</li>
+							<li>
+								<h1><a href="">Cafe</a></h1>
+							</li>
+							<li>
+								<h1><a href="">Pub</a></h1>
+							</li>
+							<li>
+								<h1><a href="">Bistro</a></h1>
+							</li>						
+						</ul>
+					</div>
+					<!-- /Categories -->
+
 					<!-- Map -->
 					<div class="map">
 						<img src="assets/map.jpg" height="311" width="472" alt="">

@@ -139,13 +139,19 @@
 .rating,
 .rating-ro {
 	@include grid-column(3);
-	width: 80px !important;
 	float: right;
 	span {
 		color: #FFC107;
 	}
 }
-
+.rating-ro {
+	font-size: 1.1rem;
+	width: 84px !important;
+}
+.rating {
+	font-size: 1.25rem;
+	width: 94px !important;
+}
 // Response
 .response,
 .user-info-block,

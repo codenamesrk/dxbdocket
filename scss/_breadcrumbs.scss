@@ -1,5 +1,6 @@
 // Breadcrumbs
 .breadcrumbs li {
+	font-size: 90%;
 	&:not(:last-child)::after {
 		@include fa-icon();
 		content: $fa-var-angle-right;

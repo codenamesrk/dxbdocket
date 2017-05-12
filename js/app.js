@@ -19,6 +19,8 @@ $(document).foundation();
 var rateOptions = {
     max_value: 5,
     step_size: 0.5,
+ 	ajax_method: 'POST',
+    url: 'http://localhost/dxb/postrate.php',
 }
 var roOptions = {
     max_value: 5,
@@ -28,3 +30,4 @@ var roOptions = {
 
 $(".rating-ro").rate(roOptions);
 $(".rating").rate(rateOptions);
+// Refer Documentation if u want to tweak https://github.com/auxiliary/rater

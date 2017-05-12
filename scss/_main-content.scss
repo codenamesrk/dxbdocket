@@ -39,10 +39,16 @@
 		margin-bottom: 0;
 	}
 	h2 {
-		font-size: 1.1rem;
+		font-size: 0.9rem;
+		line-height: 0.9rem;
 		margin-bottom: 0;
 		color: #848484;
 		font-weight: 400;
+
+		@include breakpoint(medium) {
+			font-size: 1.1rem;
+			line-height: 1.2;
+		}
 	}
 }
 

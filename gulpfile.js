@@ -19,10 +19,10 @@ gulp.task('sass', function() {
 	 	outputStyle: 'compressed' 
 	})
 	.on('error', $.sass.logError))
+	.pipe(sourcemaps.write())	
 	.pipe($.autoprefixer({
 		browsers: ['last 2 versions', 'ie >= 9']
 		}))
-	.pipe(sourcemaps.write('maps'))
 	.pipe(gulp.dest('css'));
 });
 

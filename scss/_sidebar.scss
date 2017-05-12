@@ -1,14 +1,20 @@
 // Sidebar
 .map {
 	margin-bottom: $global-margin/2;
+	img {
+		width: 100%;
+	}
 }
-.address,
-.phone {
+.address {
 	margin-bottom: $global-margin+0.25;
 }
-// .map {
-// 	margin-top: $global-margin;
-// }
+.phone {
+	h4{ 
+		font-size: 1.5625rem;
+		margin-bottom: 0;
+		line-height:0.75; 
+	}
+}
 
 // Post Listing
  .post-list {

@@ -25,12 +25,12 @@
 .entry-img {
 	float: left;
 	width: 50px;
-	margin-right: .625rem;
-	@include breakpoint(medium) {
-		margin-right: 0.9375rem;
-	}
 }
 .entry-title {
+	margin-left: .625rem;
+	@include breakpoint(medium) {
+		margin-left: 0.9375rem;
+	}	
 	padding-left: 50px;
 	h1 {
 		font-size: 1.5rem;

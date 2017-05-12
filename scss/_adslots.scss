@@ -31,5 +31,11 @@
 	}
 }
 #adslot-3 {
-	text-align: center;	
+	text-align: left;
+	.adslot-3-container {
+		margin: 0 auto;
+	    position: relative;
+	    width: 100%;
+	    max-width: 300px;
+	}	
 }

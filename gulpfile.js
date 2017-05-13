@@ -38,7 +38,7 @@ var Paths = {
 		// 'bower_components/foundation-sites/js/foundation.sticky.js',
 		// 'bower_components/foundation-sites/js/foundation.tabs.js',
 		// 'bower_components/foundation-sites/js/foundation.toggler.js',
-		// 'bower_components/foundation-sites/js/foundation.tooltip.js',
+		'bower_components/foundation-sites/js/foundation.tooltip.js',
 		// 'bower_components/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js',		
 
 		// Custom Js
@@ -72,7 +72,7 @@ gulp.task('uncss', function(){
 			'http://localhost/dxb/index.html',
 		],
 		ignore: [
-			'.rating span','.rating-ro span','.phone.verified'
+			/.foundation-mq/,/^\.is-.*/,'.rating span','.rating-ro span','.phone.verified',/tooltip/,
 		]
 		}))
 	.pipe(rename({

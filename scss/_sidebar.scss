@@ -55,6 +55,8 @@
  	margin-top: $global-margin+.25;
  	.post {
  		margin-bottom: 0.9375rem;
+ 		display: inline-block;
+ 		width: 100%;
  	}
  	.post-thumbnail {
  		width: 51px;

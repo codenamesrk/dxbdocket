@@ -52,6 +52,7 @@
 @include motion-ui-animations;
 
 // Custom Style
+@import 'mixins';
 @import 'layout';
 @import 'topbar';
 @import 'breadcrumbs';

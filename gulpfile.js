@@ -72,7 +72,7 @@ gulp.task('uncss', function(){
 			'http://localhost/dxb/index.html',
 		],
 		ignore: [
-			'.rating span','.rating-ro span'
+			'.rating span','.rating-ro span','.phone.verified'
 		]
 		}))
 	.pipe(rename({
@@ -100,5 +100,5 @@ gulp.task('imagemin', function(){
 gulp.task('default', ['sass','javascript'], function() {
 	gulp.watch(['scss/**/*.scss'], ['sass']);
 });
-
-gulp.task('optimize', ['sass','javascript','imagemin','uncss']);
+gulp.task('assetsminify', ['imagemin']);
+gulp.task('optimize', ['sass','javascript','uncss']);

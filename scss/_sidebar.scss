@@ -9,12 +9,24 @@
 .address {
 	margin-bottom: $global-margin+0.25;
 }
-.phone {
+.phone {	
+	position: relative;
+	border: 1px solid #cccccc;
+    border-radius: .28571rem;
+    padding: 0.85em 1em;
+    background: #eff2f6;
 	h4{ 
 		font-size: 1.5625rem;
 		margin-bottom: 0;
 		line-height:0.75; 
 	}
+	a {
+	    color: #7B8489;
+	}
+	@include triangle(unverified);	
+	&.verified {
+		@include triangle(verified);
+	}	
 }
 
 // Categories

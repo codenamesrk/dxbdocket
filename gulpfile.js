@@ -3,10 +3,8 @@ var $    	= require('gulp-load-plugins')();
 var uncss 	= require('gulp-uncss');
 var sourcemaps = require('gulp-sourcemaps');
 var rename	= require('gulp-rename');
-var mainBowerFiles = require('gulp-main-bower-files');
 var concat 	= require('gulp-concat');
 var uglify 	= require('gulp-uglify');
-var gulpFilter = require('gulp-filter');
 var imagemin = require('gulp-imagemin');
 
 var Paths = {
@@ -46,6 +44,9 @@ var Paths = {
 		// Custom Js
 		'bower_components/rater/rater.js',
 		'javascripts/*.js',
+	],
+	images: [
+		'assets/**/*'
 	]
 };
 
@@ -56,27 +57,28 @@ gulp.task('sass', function() {
 		includePaths: Paths.sass,
 	 	outputStyle: 'compressed' 
 	})
-	.on('error', $.sass.logError))
-	.pipe(sourcemaps.write())	
+	.on('error', $.sass.logError))	
 	.pipe($.autoprefixer({
 		browsers: ['last 2 versions', 'ie >= 9']
 		}))
+	.pipe(sourcemaps.write('.'))		
 	.pipe(gulp.dest('css'));
 });
 
 gulp.task('uncss', function(){
-	return gulp.src([
-		'css/app.css',
-		])
+	return gulp.src('css/app.css')
 	.pipe(uncss({
 		html: [
 			'http://localhost/dxb/index.html',
+		],
+		ignore: [
+			'.rating span','.rating-ro span'
 		]
 		}))
 	.pipe(rename({
         suffix: '.min'
     }))	
-	.pipe(gulp.dest('css'));
+	.pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('javascript', function(){
@@ -86,9 +88,17 @@ gulp.task('javascript', function(){
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(gulp.dest('./js'))
+		.pipe(gulp.dest('./dist/js/'))
+});
+
+gulp.task('imagemin', function(){
+	return gulp.src(Paths.images)
+		.pipe(imagemin())
+		.pipe(gulp.dest('./dist/images/'))
 });
 
 gulp.task('default', ['sass','javascript'], function() {
 	gulp.watch(['scss/**/*.scss'], ['sass']);
 });
+
+gulp.task('optimize', ['sass','javascript','imagemin','uncss']);

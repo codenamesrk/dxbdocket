@@ -5,8 +5,10 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DXB Docket</title>
+	<!-- Dev -->
 	<link rel="stylesheet" href="css/app.css">
-	<!-- <link rel="stylesheet" href="css/app.min.css"> -->
+	<!-- Production -->
+	<link rel="stylesheet" href="dist/css/app.min.css">
 </head>
 <body>
 	<!-- Topbar -->
@@ -82,7 +84,7 @@
 		<div class="row">
 			<small class="spons-link">sponsored links</small>
 			<div id="adslot-1">
-				<img src="assets/banner_970x90.png" height="90" width="970" alt="">
+				<img src="dist/images/images/banner_970x90.png" height="90" width="970" alt="">
 			</div>
 		</div>
 		<!-- /AdSlot #1 -->
@@ -92,7 +94,7 @@
 				<!-- Entry Title -->
 				<div class="title-wrap clearfix">					
 					<div class="entry-img">
-						<img src="assets/thumb_50x50.png" height="50" width="50" alt="">
+						<img src="dist/images/images/thumb_50x50.png" height="50" width="50" alt="">
 					</div>
 					<div class="entry-title">
 						<h1>Plastic Ocean <span class="label success"><i class="fa fa-circle" aria-hidden="true"></i>Open</span></h1>
@@ -121,7 +123,7 @@
 				<div class="mobile-adslot-container">
 					<!-- Map -->
 					<div class="map">
-						<img src="assets/map.jpg" height="311" width="472" alt="">
+						<img src="dist/images/images/map.jpg" height="311" width="472" alt="">
 					</div>
 					<!-- /Map -->
 
@@ -170,7 +172,7 @@
 					<!-- Adslot #3 -->
 					<div id="adslot-4">
 						<small class="spons-link">sponsored links</small>
-						<img src="assets/square_336x280.png" height="282" width="338" alt="">
+						<img src="dist/images/images/square_336x280.png" height="282" width="338" alt="">
 					</div>
 					<!-- /Adslot #3 -->					
 				</div>
@@ -267,7 +269,7 @@
 					<div class="adslot-2-wrap">						
 						<div id="adslot-2" class="adslot-2">
 							<small class="spons-link">sponsored links</small>
-							<img src="assets/square_336x280.png" height="282" width="338" alt="">
+							<img src="dist/images/images/square_336x280.png" height="282" width="338" alt="">
 						</div>
 					</div>
 					<div class="post-navigation">
@@ -391,7 +393,7 @@
 
 					<!-- Map -->
 					<div class="map">
-						<img src="assets/map.jpg" height="311" width="472" alt="">
+						<img src="dist/images/images/map.jpg" height="311" width="472" alt="">
 					</div>
 					<!-- /Map -->
 
@@ -419,7 +421,7 @@
 					<div id="adslot-3">
 						<div class="adslot-3-container">
 							<small class="spons-link">sponsored links</small>
-							<img src="assets/square_300x600.jpg" height="600" width="300" alt="">
+							<img src="dist/images/images/square_300x600.jpg" height="600" width="300" alt="">
 						</div>
 					</div>
 					<!-- /Adslot #3 -->					
@@ -470,11 +472,12 @@
 			</aside>
 		</div>
 	</div>
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/what-input/dist/what-input.js"></script>
-<!-- 	<script src="bower_components/rater/rater.min.js"></script>
-	<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-	<script src="js/app.js"></script> -->
-	<script src="js/app.min.js"></script>
+	<!-- Dev -->
+	<!-- <script src="bower_components/jquery/dist/jquery.js"></script> -->
+	<!-- <script src="bower_components/what-input/dist/what-input.js"></script> -->
+	<!-- Production -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.0.6/what-input.min.js"></script>
+	<script src="dist/js/app.min.js"></script>
 </body>
 </html>

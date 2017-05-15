@@ -2,7 +2,7 @@
 
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
+// @import 'motion-ui';
 @import 'font-awesome';
 
 @include foundation-global-styles;
@@ -17,9 +17,9 @@
 // @include foundation-badge;
 @include foundation-breadcrumbs;
 // @include foundation-button-group;
-// @include foundation-callout;
+@include foundation-callout;
 // @include foundation-card;
-// @include foundation-close-button;
+@include foundation-close-button;
 @include foundation-menu;
 @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
@@ -42,7 +42,7 @@
 // @include foundation-tabs;
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
-@include foundation-tooltip;
+// @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 // @include foundation-float-classes;

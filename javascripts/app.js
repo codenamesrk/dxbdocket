@@ -31,3 +31,15 @@ var roOptions = {
 $(".rating-ro").rate(roOptions);
 $(".rating").rate(rateOptions);
 // Refer Documentation if u want to tweak https://github.com/auxiliary/rater
+
+// Copy Phone no. to Clipboard
+$(".copy-button").click(function(){
+	var $temp = $("<input>");
+	var num = $('.phone-no').first().text();	
+	$("body").append($temp);
+	$temp.val(num).select();
+	document.execCommand("copy");
+	$temp.remove();
+	$(this).fadeOut();
+	$('.phone-no-container').removeClass('blur-ph');
+});

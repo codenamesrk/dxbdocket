@@ -18,7 +18,13 @@
 	h4{ 
 		font-size: 1.5625rem;
 		margin-bottom: 0;
-		line-height:0.75; 
+		line-height:0.75;
+		transition: all 0.9s ease;
+
+		&.blur-ph {
+			color: transparent;
+    		text-shadow: 0 0 5px rgba(0,0,0,0.5);
+		} 
 	}
 	a {
 	    color: #7B8489;
@@ -26,9 +32,32 @@
 	@include triangle(unverified);	
 	&.verified {
 		@include triangle(verified);
-	}	
+		.verify-phone {
+			display: none;
+		}
+	}
+	&:not(.verified) .verify-phone {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: -18px;
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		font-weight: 600;
+		line-height: 0.8;
+		margin-bottom: 0;
+	}		
 }
-
+.phone-no-container {
+	position: relative;
+}
+// Buttons
+.copy-button {
+	margin-bottom: 0;
+    padding: 0.5em 0.75em;
+	@include absolute-center;
+    background-color: rgba(0, 0, 0, 0.65);
+}
 // Categories
 .categories {
 	border: 1px solid #e7e7e7;
